@@ -1,0 +1,588 @@
+
+input[type="file"] {
+    color: transparent;
+  
+}
+
+@media screen and (min-width: 0px) and (max-width: 768px) {
+    div .LogoFlex img {
+        height: 165px;
+    }
+    div.TopBarFlex_Phone {
+        display: flex;
+    }
+    div.LoginInputFlex input {
+        background-color: white !important;
+        border-radius: 100px !important;
+        padding-left: 5% !important;
+        width: 100% !important;
+    }
+    div.LoginInputFlex .LoginBtn {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(196, 196, 196);
+        border-radius: 100px;
+        height: 50px;
+        letter-spacing: 3px;
+        color: rgb(37, 37, 37);
+        font-size: 18px;
+    }
+    div.TopBarFlex {
+        display: none;
+    }
+    div.TopBarFlexLogin {
+        display: none;
+    }
+    p.Title {
+        font-size: 48px;
+        color: white;
+        /* font-weight:lighter; */
+        margin-top: -10%;
+    }
+    p.SubTitle {
+        font-size: 14px;
+        color: white;
+        /* font-weight:lighter; */
+        margin-top: 4%;
+        border-width: 1px;
+        width: 100%;
+    }
+    header.TitleImg {
+        background-image: url(../img/TitleBg.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 800px;
+    }
+    div.HeaderFlex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 600px;
+    }
+}
+
+.MemberBg {
+    background-color: rgb(92, 92, 92);
+}
+
+.MemberContent {
+    padding-left: 10%;
+    padding-right: 5%;
+    padding-top: 10%;
+}
+
+body {
+    font-family: Microsoft JhengHei;
+    animation-name: fadeOut;
+    animation-duration: 1s;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.DialogContent {
+    margin-top: 3%;
+}
+
+.DialogContentText {
+    margin-left: -20%;
+    margin-top: 5%;
+}
+
+.DialogImg {}
+
+.DialogTitle {
+    font-family: Microsoft JhengHei;
+}
+
+.DialogTitleCount {
+    font-family: Microsoft JhengHei;
+    font-size: 20px;
+}
+
+.HeaderFlex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 800px;
+}
+
+.DiaCount {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.TopBarFlex {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    padding-right: 2%;
+}
+
+.TopBarFlex_Phone {
+    display: none;
+    justify-content: flex-start;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    padding-top: 2%;
+    padding-left: 2%;
+}
+
+.TopBarFlex_Phone a {
+    color: white;
+}
+
+.TopBarFlexLogin {
+    display: none;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    padding-right: 2%;
+}
+
+.BarOp {
+    color: white;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.BarOp a {
+    color: white;
+    width: 140px;
+    letter-spacing: 1px;
+}
+
+.BarOp i {
+    vertical-align: -5px;
+    margin-right: 5%;
+}
+
+.ImgBox {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.BarOpLan {
+    color: white;
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-color: white;
+    border-width: 2px;
+    border-style: solid;
+    font-size: 14px;
+}
+
+.Title {
+    font-size: 100px;
+    color: white;
+    font-weight: lighter;
+    margin-top: -10%;
+}
+
+.SubTitle {
+    font-size: 25px;
+    color: white;
+    /* font-weight:lighter; */
+    margin-top: 4%;
+    border-width: 1px;
+    width: 100%;
+}
+
+.TitleBtn {
+    /* width:100px;
+    height: 50px;
+    border-style:solid;
+    border-color:white; */
+    border-color: white;
+    border-width: 2px;
+    border-style: solid;
+    padding: 5px;
+    width: 200px;
+    height: 50px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    letter-spacing: 3px;
+}
+
+.TitleBtnFlex {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 150px;
+    margin-top: 2%;
+}
+
+.TitleImg {
+    background-image: url(../img/TitleBg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 1000px;
+}
+
+DialogFlexTop {
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+}
+
+.DialogFlexTopEnd {
+    display: flex;
+    justify-content: flex-end;
+    width: 300px;
+}
+
+.DialogFlexTopStart {
+    display: flex;
+    justify-content: flex-start;
+    width: 300px;
+}
+
+.ImgPerson {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ImgPerson_User {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.ImgFlex {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.ImgPerson_User_Name {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 16px;
+    margin-left: 3%;
+}
+
+.ImgPerson_User_Status {
+    margin-top: -3%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 16px;
+    margin-left: 3%;
+    letter-spacing: 2px;
+}
+
+.ImgLi {
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+.ImgPerson_head {
+    width: 40px;
+    height: 40px;
+    border-radius: 500px;
+    background-image: url(../img/people.jpeg);
+    background-size: cover;
+}
+
+.LogoFlex {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.LogoFlex img {
+    height: 300px;
+}
+
+.LoginModal {
+    background-color: rgb(70, 68, 68);
+}
+
+.LoginInputFlex {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.LoginInputFlex input {
+    background-color: white !important;
+    border-radius: 100px !important;
+    padding-left: 5% !important;
+    width: 50% !important;
+}
+
+.FbLoginBtn {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.LoginInputFlex .LoginBtn {
+    width: 55%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(196, 196, 196);
+    border-radius: 100px;
+    height: 50px;
+    letter-spacing: 3px;
+    color: rgb(37, 37, 37);
+    font-size: 18px;
+}
+
+.LoginModal p {
+    letter-spacing: 3px;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    width: 100%;
+    margin-top: 5%;
+    cursor: pointer;
+}
+
+.CloseBtn {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1%;
+    margin-right: 1%;
+    color: white;
+    cursor: pointer;
+}
+
+
+/* Shared */
+
+.loginBtnFb {
+    box-sizing: border-box;
+    position: relative;
+    /* width: 13em;  - apply for fixed size */
+    margin: 0.2em;
+    padding: 0 15px 0 46px;
+    border: none;
+    text-align: left;
+    line-height: 34px;
+    white-space: nowrap;
+    border-radius: 0.2em;
+    font-size: 16px;
+    color: #FFF;
+}
+
+.loginBtnFb:before {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 34px;
+    height: 100%;
+}
+
+.loginBtnFb:focus {
+    outline: none;
+}
+
+.loginBtnFb:active {
+    box-shadow: inset 0 0 0 32px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Facebook */
+
+.loginBtn--facebook {
+    background-color: #4C69BA;
+    background-image: linear-gradient(#4C69BA, #3B55A0);
+    /*font-family: "Helvetica neue", Helvetica Neue, Helvetica, Arial, sans-serif;*/
+    text-shadow: 0 -1px 0 #354C8C;
+}
+
+.loginBtn--facebook:before {
+    border-right: #364e92 1px solid;
+    background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/14082/icon_facebook.png') 6px 6px no-repeat;
+}
+
+.loginBtn--facebook:hover,
+.loginBtn--facebook:focus {
+    background-color: #5B7BD5;
+    background-image: linear-gradient(#5B7BD5, #4864B1);
+}
+
+.PersonDiv {
+    width: 80%;
+}
+
+.PersonDiv p {
+    color: white;
+    font-size: 18px;
+    letter-spacing: 3px;
+    line-height: 50px;
+}
+
+.PersonDiv img {
+    border-radius: 5px;
+}
+
+.ChangeData {
+    color: rgb(87, 86, 86);
+    width: 150px;
+    height: 50px;
+    font-size: 18px;
+    background-color: rgb(194, 196, 196);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 99px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    cursor: pointer;
+}
+
+.PersonDiv2 h5 {
+    color: white;
+    font-family: 24px;
+    letter-spacing: 3px;
+}
+
+.PersonDiv2 img {
+    width: 30%;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top: 5%;
+}
+
+.UploadTitle h5 {
+    color: white;
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+
+.UploadBtn{
+    width: 150px;
+    height: 40px;
+    border-radius: 99px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.UploadLeft p{
+
+    color: white;
+    font-size: 18px;
+    letter-spacing: 3px;
+    text-align: left;
+    width: 100%;
+    
+}
+
+.UploadLeft img{
+    width: 50%;
+    margin-top: 5%;
+}
+
+.UploadWorkFooter{
+
+    background-color: rgb(70, 68, 68) !important;
+
+}
+
+.UploadWorkFooter a{
+    color: white;
+    letter-spacing: 3px;
+}
+
+.UploadRight{
+    height: 400px;
+}
+
+.UploadRight p{
+
+    color: white;
+    font-size: 18px;
+    letter-spacing: 3px;
+    text-align: left;
+    width: 100%;
+    
+}
+
+.UploadRight textarea{
+
+    background-color: #FFF;
+    margin-top: 5%;
+    height: 250px;
+    font-size: 18px;
+    resize: none;
+
+}
+
+.UploadRight input{
+    color: white;
+}
+
+.UploadRight label{
+   
+}
+
+.ShopImg{
+    width: 70%;
+}
+
+.ShopDiv2 p {
+    color: white;
+    font-size: 18px;
+    letter-spacing: 3px;
+    line-height: 50px;
+}

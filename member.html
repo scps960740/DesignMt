@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="zh" class="no-js">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/reset.css">
+    <!-- CSS reset -->
+    <link rel="stylesheet" href="css/default.css">
+    <!-- CSS reset -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Resource style -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- main style -->
+    <script src="js/modernizr.js"></script>
+    <!-- Modernizr -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/jquery.viewbox.min.js"></script>
+    <link rel="stylesheet" href="assets/MODALit.min.css">
+    <script src="assets/MODALit.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/viewbox.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection" />
+   
+
+    <title>DesignMt</title>
+</head>
+
+<body class="MemberBg">
+
+    <div class="TopBarFlex_Phone">
+
+        <a href="#" data-activates="slide-out" class="button-collapse">
+            <i class="material-icons">menu</i>
+        </a>
+
+    </div>
+
+
+    <!-- 手機版未登入 -->
+
+    <ul id="slide-out" class="side-nav SidePhoneNoLogin">
+
+        <li>
+
+            <a class="modal-trigger" href="#">
+                <i class="material-icons">people</i>關 於 我 們
+            </a>
+
+        </li>
+        <li>
+
+            <a class="modal-trigger" href="#LoginOrSignUp">
+                <i class="material-icons">face</i>已 有 帳 號 ？</a>
+
+        </li>
+        <li>
+
+            <a class="modal-trigger" href="#LoginOrSignUp">
+                <i class="material-icons">person_add</i>註 冊</a>
+
+        </li>
+
+    </ul>
+
+    <!-- 電腦版未登入 -->
+
+
+    <div style="background-color:rgb(75, 75, 75);height:70px;" class="TopBarFlex">
+
+        <div class="BarOp">
+            <a class="modal-trigger" href="./index.html">
+                <i class="material-icons">home</i>回 首 頁
+            </a>
+        </div>
+
+        <div class="BarOp">
+            <a class="modal-trigger" href="#">
+                <i class="material-icons">people</i>關 於 我 們
+            </a>
+        </div>
+
+        <div class="BarOp">
+            <a class="modal-trigger" href="#LoginOrSignUp">
+                <i class="material-icons">face</i>已 有 帳 號 ？</a>
+        </div>
+
+        <div class="BarOp">
+            <a class="modal-trigger" href="#LoginOrSignUp">
+                <i class="material-icons">person_add</i>註 冊</a>
+        </div>
+
+    </div>
+
+    <!-- 手機版登入中 -->
+
+    <ul id="slide-out" class="side-nav SidePhoneLogin">
+
+
+        <li>
+
+            <a class="modal-trigger" href="#">
+                <i class="material-icons">people</i>關 於 我 們
+            </a>
+
+        </li>
+        <li>
+
+            <a class="modal-trigger" href="#LoginOrSignUp">
+                <i class="material-icons">face</i>會 員 資 料</a>
+
+        </li>
+        <li>
+
+            <a class="Logout modal-trigger" href="#">
+                <i class="material-icons">person_add</i>登出</a>
+
+        </li>
+
+    </ul>
+
+    <!-- 電腦版登入中 -->
+
+    <div style="background-color:rgb(75, 75, 75);height:70px;" class="TopBarFlexLogin">
+
+        <div class="BarOp">
+            <a class="modal-trigger" href="./index.html">
+                <i class="material-icons">home</i>回 首 頁
+            </a>
+        </div>
+
+        <div class="BarOp">
+            <a class="modal-trigger" href="#">
+                <i class="material-icons">people</i>關 於 我 們
+            </a>
+        </div>
+
+        <div class="BarOp">
+            <a class="modal-trigger" href="#LoginOrSignUp">
+                <i class="material-icons">face</i>會 員 資 料</a>
+        </div>
+
+        <div class="BarOp">
+            <a class="Logout modal-trigger" href="#">
+                <i class="material-icons">person_add</i>登出</a>
+        </div>
+
+        <!-- <div class="BarOpLan">T W</div>
+				<div class="BarOpLan">J P</div> -->
+    </div>
+
+
+
+    <div id="LoginOrSignUp" class="modal">
+        <div class="CloseBtn">
+            <i class="material-icons">close</i>
+        </div>
+
+        <div class="LoginModal modal-content">
+
+            <div class="LogoFlex">
+
+                <img src="./img/logo.png" alt="">
+
+            </div>
+            <div class="LoginInputFlex">
+                <input type="text" placeholder="請輸入Email">
+                <input type="password" placeholder="請輸入密碼">
+                <div class="LoginBtn">登入</div>
+            </div>
+            <p>還沒有帳號？點我註冊</p>
+            <div class="FbLoginBtn">
+
+                <button class="Fbb loginBtnFb loginBtn--facebook">
+                    使用FaceBook帳號登入
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="UploadWork" class="modal">
+        <div class="CloseBtn">
+            <i class="material-icons">close</i>
+        </div>
+
+        <div  class="LoginModal modal-content">
+
+            <div class="row">
+                <div class="col l12 m12 s12 UploadTitle">
+                    <h5>上傳新作品</h5>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col l6 m6 s12 UploadLeft">
+                    <p>預覽圖</p>
+                    <input class="" id="inp" type='file'>
+                    <!-- <p id="b64"></p> -->
+                    <img id="img">
+                </div>
+                <div class="col l6 m6 s12">
+                    <div id="PersonUpload" class="UploadRight">
+                        <p>簡述</p>
+                        <label for="uploadtitle">作品標題</label>
+                        <input name="uploadtitle" v-model="upload.title" type="text">
+                        <textarea v-model="upload.content" rows="4" cols="50"></textarea>
+                
+                        <!-- <a  v-on:click="uploadToDB()" href="#!" class="modal-action waves-effect waves-green btn-flat ">上傳</a> -->
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div id="GoUpload" class="UploadWorkFooter modal-footer">
+            <a v-on:click="uploadToDB()" href="#!" class="modal-action waves-effect waves-green btn-flat ">上傳</a>
+            <a href="#!" class="modal-action modal-close waves-effect modal-close waves-green btn-flat ">取消</a>
+        </div>
+
+    </div>
+
+
+    <main class="MemberContent">
+
+        
+
+        <div class="row">
+            <div class="col l6 m6 s12">
+
+                <div id="Person" class=" PersonDiv">
+                    <img src="./img/person12.jpeg" alt="">
+                    <div class="ChangeData">修改個人資料</div>
+
+                    <p>帳號：{{person.email}} </p>
+                    <p>性別：{{person.sex}}</p>
+
+
+                </div>
+            </div>
+            <div class="col l6 m6 s12">
+                <div id="PersonImg" class="PersonDiv2">
+                    <h5>作品集</h5>
+                    <img v-for="(item, index) in person.img" v-bind:src="item.img" alt="">
+
+                </div>
+                <div href="#UploadWork" class="modal-trigger ChangeData">上傳新作品</div>
+            </div>
+
+        </div>
+
+    </main>
+
+
+
+
+
+
+
+    
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script src="assets/jquery.viewbox.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/member.js"></script>
+    <script src="js/jquery.mixitup.min.js"></script>
+    <script src="js/main.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vue"></script>
+  
+
+    <script>
+        $('.Fbb').click(() => {
+            // FB.logout(function(response) {
+            // 	// Person is now logged out
+            // 	console.log(response);
+            //  });
+
+            //FB.login會彈出登入視窗
+            FB.login(function (response) {
+                if (response.status === 'connected') {
+                    FB.api('/me', 'GET', {
+                        "fields": "id,name,gender,email"
+                    }, function (response) {
+                        //FB登入視窗點擊登入後，會將資訊回傳到此處。
+                        // FBlogin(response.email, response.name, response.gender);
+                        console.log(response);
+                        FbLogin(response);
+
+                    });
+                }
+            }, {
+                scope: 'public_profile,email'
+            });
+        });
+
+        window.fbAsyncInit = function () {
+            FB.init({
+                appId: '461183330903306',
+                xfbml: true,
+                version: 'v2.11'
+            });
+            FB.AppEvents.logPageView();
+
+
+        };
+
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) {
+                return;
+            }
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "https://connect.facebook.net/zh_TW/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+
+        // function testAPI() {
+        // 	console.log('Welcome!  Fetching your information.... ');
+        // 	FB.api('/me', function (response) {
+        // 		console.log(response);
+        // 		console.log('Successful login for: ' + response.name);
+        // 	});
+
+        // }
+        function FbLogin(res) {
+
+            $.post('http://13.230.19.21/Mtphp/api.php', {
+
+                    Action: 'SignUp',
+                    User: res.email,
+                    Password: res.id,
+
+                }, (data) => {
+
+                    $.post('http://13.230.19.21/Mtphp/api.php', {
+
+                            Action: 'Login',
+                            User: res.email,
+                            Password: res.id,
+
+                        }, (data) => {
+
+                            var obj = $.parseJSON(data);
+                            console.log(obj);
+                            localStorage.setItem('Logining', 'true');
+                            window.location.reload();
+                        })
+                        .fail((err) => {
+
+                        });
+
+                })
+                .fail((err) => {});
+
+
+        }
+    </script>
+</body>
+
+</html>

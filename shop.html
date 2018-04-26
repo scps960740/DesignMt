@@ -1,0 +1,403 @@
+<!doctype html>
+<html lang="zh" class="no-js">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/reset.css">
+	<!-- CSS reset -->
+	<link rel="stylesheet" href="css/default.css">
+	<!-- CSS reset -->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- Resource style -->
+	<link rel="stylesheet" href="css/main.css">
+	<!-- main style -->
+	<script src="js/modernizr.js"></script>
+	<!-- Modernizr -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="assets/jquery.viewbox.min.js"></script>
+	<link rel="stylesheet" href="assets/MODALit.min.css">
+	<script src="assets/MODALit.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="assets/viewbox.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	<!--Import Google Icon Font-->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!--Import materialize.css-->
+	<link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection" />
+
+
+	<title>DesignMt</title>
+</head>
+
+<body style="background-color:rgb(80, 80, 80)">
+
+	<div class="TopBarFlex_Phone">
+
+		<a href="#" data-activates="slide-out" class="button-collapse">
+			<i class="material-icons">menu</i>
+		</a>
+
+	</div>
+
+
+	<!-- 手機版未登入 -->
+
+	<ul id="slide-out" class="side-nav SidePhoneNoLogin">
+
+		<li>
+
+			<a class="modal-trigger" href="#">
+				<i class="material-icons">people</i>關 於 我 們
+			</a>
+
+		</li>
+		<li>
+
+			<a class="modal-trigger" href="#LoginOrSignUp">
+				<i class="material-icons">face</i>已 有 帳 號 ？</a>
+
+		</li>
+		<li>
+
+			<a class="modal-trigger" href="#LoginOrSignUp">
+				<i class="material-icons">person_add</i>註 冊</a>
+
+		</li>
+
+	</ul>
+
+	<!-- 電腦版未登入 -->
+
+
+	<div style="background-color:rgb(75, 75, 75);height:70px;" class="TopBarFlex">
+
+		<div class="BarOp">
+			<a class="modal-trigger" href="./index.html">
+				<i class="material-icons">home</i>回 首 頁
+			</a>
+		</div>
+
+		<div class="BarOp">
+			<a class="modal-trigger" href="#">
+				<i class="material-icons">people</i>關 於 我 們
+			</a>
+		</div>
+
+		<div class="BarOp">
+			<a class="modal-trigger" href="#LoginOrSignUp">
+				<i class="material-icons">face</i>已 有 帳 號 ？</a>
+		</div>
+
+		<div class="BarOp">
+			<a class="modal-trigger" href="#LoginOrSignUp">
+				<i class="material-icons">person_add</i>註 冊</a>
+		</div>
+
+	</div>
+
+	<!-- 手機版登入中 -->
+
+	<ul id="slide-out" class="side-nav SidePhoneLogin">
+
+
+		<li>
+
+			<a class="modal-trigger" href="#">
+				<i class="material-icons">people</i>關 於 我 們
+			</a>
+
+		</li>
+		<li>
+
+			<a class="modal-trigger" href="#LoginOrSignUp">
+				<i class="material-icons">face</i>會 員 資 料</a>
+
+		</li>
+		<li>
+
+			<a class="Logout modal-trigger" href="#">
+				<i class="material-icons">person_add</i>登出</a>
+
+		</li>
+
+	</ul>
+
+	<!-- 電腦版登入中 -->
+
+	<div style="background-color:rgb(75, 75, 75);height:70px;" class="TopBarFlexLogin">
+
+		<div class="BarOp">
+			<a class="modal-trigger" href="./index.html">
+				<i class="material-icons">home</i>回 首 頁
+			</a>
+		</div>
+
+		<div class="BarOp">
+			<a class="modal-trigger" href="#">
+				<i class="material-icons">people</i>關 於 我 們
+			</a>
+		</div>
+
+		<div class="BarOp">
+			<a class="modal-trigger" href="#LoginOrSignUp">
+				<i class="material-icons">face</i>會 員 資 料</a>
+		</div>
+
+		<div class="BarOp">
+			<a class="Logout modal-trigger" href="#">
+				<i class="material-icons">person_add</i>登出</a>
+		</div>
+
+		<!-- <div class="BarOpLan">T W</div>
+						<div class="BarOpLan">J P</div> -->
+	</div>
+
+
+
+	<div id="LoginOrSignUp" class="modal">
+		<div class="CloseBtn">
+			<i class="material-icons">close</i>
+		</div>
+
+		<div class="LoginModal modal-content">
+
+			<div class="LogoFlex">
+
+				<img src="./img/logo.png" alt="">
+
+			</div>
+			<div class="LoginInputFlex">
+				<input type="text" placeholder="請輸入Email">
+				<input type="password" placeholder="請輸入密碼">
+				<div class="LoginBtn">登入</div>
+			</div>
+			<p>還沒有帳號？點我註冊</p>
+			<div class="FbLoginBtn">
+
+				<button class="Fbb loginBtnFb loginBtn--facebook">
+					使用FaceBook帳號登入
+				</button>
+
+			</div>
+
+		</div>
+
+	</div>
+
+
+	<!-- <main>
+
+		<div>
+
+		</div>
+
+
+		<div id="shop2" class="ShopContentFlex">
+			<div class="row">
+				<div class="col l12 m12 s12">
+					<h4>商品內容</h4>
+				</div>
+				<hr>
+			</div>
+			<div class="row">
+				<div class="col l6 m6 s12">
+
+					<img class="responsive-img" src="../img/img-1.jpg" alt="">
+
+				</div>
+				<div class="col l6 m6 s12">
+					<h4>XXX的作品</h4>
+					<hr>
+					<p class="Shop2_Content">暢銷產品四式360透氣款的最新顏色</p>
+					<p class="Shop2_Content">採用輕巧耐磨的材質</p>
+					<p class="Shop2_Content">清涼透氣技術 - 讓寶寶和父母都更涼快！</p>
+					<p class="Shop2_Content">四種背法:前背面向內，前背面向外，側背及後背</p>
+					<div class="row center">
+						<div class="col l6 m6 s12">
+							<h5 style="color:red">NT$6750</h5>
+							<a class="waves-effect waves-light btn red darken-1">投票</a>
+						</div>
+						<div class="col l6 m6 s12">
+							<h5 style="color:rgb(255, 174, 0)">商品收藏</h5>
+							<a href="/shop_edit.html" class="waves-effect waves-light orange btn">收藏</a>
+						</div>
+					</div>
+
+
+				</div>
+
+			</div>
+
+
+
+		</div>
+
+
+
+	</main> -->
+
+	  <main class="MemberContent">
+
+        
+
+        <div id="ShopPerson"  class="row">
+            <div class="col l6 m6 s12">
+
+                <div class="PersonDiv">
+                    <img class="ShopImg" v-bind:src="shopperson.img" alt="">
+                    <!-- <div class="ChangeData">修改個人資料</div> -->
+                    <p>用戶：{{shopperson.email}} </p>
+					<p>{{shopperson.count}}</p>
+
+                </div>
+            </div>
+            <div class="col l6 m6 s12">
+                <div id="PersonImg" class="ShopDiv2">
+						<p>作品名：{{shopperson.title}}</p>
+						<p>簡介：{{shopperson.content}}</p>
+                </div>
+                <div v-on:click="BtnClick(shopperson.btntext)" class="ChangeData">{{shopperson.btntext}}</div>
+            </div>
+
+        </div>
+
+    </main>
+
+	<!-- WhatsHelp.io widget -->
+	<script type="text/javascript">
+		(function () {
+			var options = {
+				facebook: "yixun.ceng1", // Facebook page ID
+				line: "//line.me/ti/p/UWSM_XjGJO", // Line QR code URL
+				company_logo_url: "//static.whatshelp.io/img/flag.png", // URL of company logo (png, jpg, gif)
+				greeting_message: "Hello, how may we help you? Just send us a message now to get assistance.", // Text of greeting message
+				call_to_action: "Message us", // Call to action
+				button_color: "#FF6550", // Color of button
+				position: "right", // Position may be 'right' or 'left'
+				order: "facebook,line" // Order of buttons
+			};
+			var proto = document.location.protocol,
+				host = "whatshelp.io",
+				url = proto + "//static." + host;
+			var s = document.createElement('script');
+			s.type = 'text/javascript';
+			s.async = true;
+			s.src = url + '/widget-send-button/js/init.js';
+			s.onload = function () {
+				WhWidgetSendButton.init(host, proto, options);
+			};
+			var x = document.getElementsByTagName('script')[0];
+			x.parentNode.insertBefore(s, x);
+		})();
+	</script>
+	<!-- /WhatsHelp.io widget -->
+
+
+
+
+
+
+
+
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/materialize.min.js"></script>
+	<script src="assets/jquery.viewbox.min.js"></script>
+	<script src="js/custom.js"></script>
+	<script src="js/jquery.mixitup.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/shop.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vue"></script>
+
+	<script>
+		$('.Fbb').click(() => {
+			// FB.logout(function(response) {
+			// 	// Person is now logged out
+			// 	console.log(response);
+			//  });
+
+			//FB.login會彈出登入視窗
+			FB.login(function (response) {
+				if (response.status === 'connected') {
+					FB.api('/me', 'GET', {
+						"fields": "id,name,gender,email"
+					}, function (response) {
+						//FB登入視窗點擊登入後，會將資訊回傳到此處。
+						// FBlogin(response.email, response.name, response.gender);
+						console.log(response);
+						FbLogin(response);
+
+					});
+				}
+			}, {
+				scope: 'public_profile,email'
+			});
+		});
+
+		window.fbAsyncInit = function () {
+			FB.init({
+				appId: '461183330903306',
+				xfbml: true,
+				version: 'v2.11'
+			});
+			FB.AppEvents.logPageView();
+
+
+		};
+
+		(function (d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) {
+				return;
+			}
+			js = d.createElement(s);
+			js.id = id;
+			js.src = "https://connect.facebook.net/zh_TW/sdk.js";
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+
+		// function testAPI() {
+		// 	console.log('Welcome!  Fetching your information.... ');
+		// 	FB.api('/me', function (response) {
+		// 		console.log(response);
+		// 		console.log('Successful login for: ' + response.name);
+		// 	});
+
+		// }
+		function FbLogin(res) {
+
+			$.post('http://13.230.19.21/Mtphp/api.php', {
+
+					Action: 'SignUp',
+					User: res.email,
+					Password: res.id,
+
+				}, (data) => {
+
+					$.post('http://13.230.19.21/Mtphp/api.php', {
+
+							Action: 'Login',
+							User: res.email,
+							Password: res.id,
+
+						}, (data) => {
+
+							var obj = $.parseJSON(data);
+							console.log(obj);
+							localStorage.setItem('Logining', 'true');
+							window.location.reload();
+						})
+						.fail((err) => {
+
+						});
+
+				})
+				.fail((err) => {});
+
+
+		}
+	</script>
+</body>
+
+</html>

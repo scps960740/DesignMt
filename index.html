@@ -1,0 +1,531 @@
+<!doctype html>
+<html lang="zh" class="no-js">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/reset.css">
+	<!-- CSS reset -->
+	<link rel="stylesheet" href="css/default.css">
+	<!-- CSS reset -->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- Resource style -->
+	<link rel="stylesheet" href="css/main.css">
+	<!-- main style -->
+	<script src="js/modernizr.js"></script>
+	<!-- Modernizr -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="assets/jquery.viewbox.min.js"></script>
+	<link rel="stylesheet" href="assets/MODALit.min.css">
+	<script src="assets/MODALit.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="assets/viewbox.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	<!--Import Google Icon Font-->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!--Import materialize.css-->
+	<link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection" />
+	<title>DesignMt</title>
+</head>
+
+<body>
+
+	<div class="TopBarFlex_Phone">
+
+		<a href="#" data-activates="slide-out" class="button-collapse">
+			<i class="material-icons">menu</i>
+		</a>
+
+	</div>
+
+
+	<!-- 手機版未登入 -->
+
+	<ul id="slide-out" class="side-nav SidePhoneNoLogin">
+
+		<li>
+
+			<a class="modal-trigger" href="#">
+				<i class="material-icons">people</i>關 於 我 們
+			</a>
+
+		</li>
+		<li>
+
+			<a class="modal-trigger" href="#LoginOrSignUp">
+				<i class="material-icons">face</i>已 有 帳 號 ？</a>
+
+		</li>
+		<li>
+
+			<a class="modal-trigger" href="#LoginOrSignUp">
+				<i class="material-icons">person_add</i>註 冊</a>
+
+		</li>
+
+	</ul>
+
+	<!-- 電腦版未登入 -->
+
+
+	<div class="TopBarFlex">
+		<div class="BarOp">
+			<a class="modal-trigger" href="#">
+				<i class="material-icons">people</i>關 於 我 們
+			</a>
+		</div>
+
+		<div class="BarOp">
+			<a class="modal-trigger" href="#LoginOrSignUp">
+				<i class="material-icons">face</i>已 有 帳 號 ？</a>
+		</div>
+
+		<div class="BarOp">
+			<a class="modal-trigger" href="#LoginOrSignUp">
+				<i class="material-icons">person_add</i>註 冊</a>
+		</div>
+
+	</div>
+
+	<!-- 手機版登入中 -->
+
+	<ul id="slide-out" class="side-nav SidePhoneLogin">
+
+		<li>
+
+			<a class="modal-trigger" href="#">
+				<i class="material-icons">people</i>關 於 我 們
+			</a>
+
+		</li>
+		<li>
+
+			<a class="modal-trigger" href="./member.html">
+				<i class="material-icons">face</i>會 員 資 料</a>
+
+		</li>
+		<li>
+
+			<a class="Logout modal-trigger" href="#">
+				<i class="material-icons">person_add</i>登出</a>
+
+		</li>
+
+	</ul>
+
+	<!-- 電腦版登入中 -->
+
+	<div class="TopBarFlexLogin">
+		<div class="BarOp">
+			<a class="modal-trigger" href="#">
+				<i class="material-icons">people</i>關 於 我 們
+			</a>
+		</div>
+
+		<div class="BarOp">
+			<a class="modal-trigger" href="./member.html">
+				<i class="material-icons">face</i>會 員 資 料</a>
+		</div>
+
+		<div class="BarOp">
+			<a class="Logout modal-trigger" href="#">
+				<i class="material-icons">person_add</i>登出</a>
+		</div>
+
+		<!-- <div class="BarOpLan">T W</div>
+				<div class="BarOpLan">J P</div> -->
+	</div>
+
+
+
+	<div id="LoginOrSignUp" class="modal">
+		<div class="CloseBtn">
+			<i class="material-icons">close</i>
+		</div>
+
+		<div class="LoginModal modal-content">
+
+			<div class="LogoFlex">
+
+				<img src="./img/logo.png" alt="">
+
+			</div>
+			<div class="LoginInputFlex">
+				<input type="text" placeholder="請輸入Email">
+				<input type="password" placeholder="請輸入密碼">
+				<div class="LoginBtn">登入</div>
+			</div>
+			<p>還沒有帳號？點我註冊</p>
+			<div class="FbLoginBtn">
+
+				<button class="Fbb loginBtnFb loginBtn--facebook">
+					使用FaceBook帳號登入
+				</button>
+
+			</div>
+
+		</div>
+
+	</div>
+
+
+	<header class="TitleImg cd-header htmleaf-header">
+
+
+
+
+
+		<!-- <ul id="example-1">
+			<li v-for="(item, index) in items">
+				<img v-bind:src="item.name" alt="Image 1">
+			</li>
+		</ul> -->
+
+
+		<div class="HeaderFlex">
+			<div class="">
+				<p class="Title">D e s i g n M t</p>
+				<p class="SubTitle">史 上 最 棒 的 紙 膠 帶 設 計 平 台</p>
+				<div class="TitleBtnFlex">
+
+						
+				
+					<div class="GoImgPage TitleBtn">
+						<i style="margin-right:5%" class="material-icons">details</i>點 我 進 入
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<!-- <div id="modal" class="modalit" aria-hidden="true">
+		<div class="dialog">
+
+			<div class="DialogFlexTop">
+				<div class="DialogFlexTopStart">
+					<button type="button" data-modal-btn="dismiss" class="btn primary">Close</button>
+					<button type="button" data-modal-btn="dismiss" class="btn primary">Close</button>
+				</div>
+				<div class="DialogFlexTopEnd">
+					<button type="button" data-modal-btn="dismiss" class="btn primary">Close</button>
+				</div>
+			</div>
+			<div id="AnswerBox" class="content ImgBox" style="padding:0">
+				
+				
+			</div>
+
+			 <footer>
+				
+
+			</footer>
+		</div>
+			
+		</div>
+
+		
+	</div> -->
+
+
+	<div style="display:none;">
+		<div id="popup">
+			<h3>Popup content</h3>
+			<p>Some text for popup window.</p>
+			<p>
+				<button type="button" class="close-button">Close</button>
+			</p>
+		</div>
+	</div>
+
+
+	<main id="test" class="cd-main-content">
+
+		
+			
+
+
+		<div class="cd-tab-filter-wrapper">
+			<div class="cd-tab-filter">
+				<ul class="cd-filters">
+					<li class="placeholder">
+						<a data-type="all" href="#0">全部</a>
+						<!-- selected option on mobile -->
+					</li>
+					<li class="filter">
+						<a class="" href="#0" data-type="all">全部</a>
+					</li>
+					<li class="filter" data-filter=".color-1">
+						<a href="#0" data-type="color-1">投票</a>
+					</li>
+					<li class="filter" data-filter=".color-2">
+						<a href="#0" data-type="color-2">販賣</a>
+					</li>
+					<li class="filter" data-filter=".color-3">
+						<a href="#0" data-type="color-3">二手交流</a>
+					</li>
+					<!-- <li class="filter" data-filter=".color-3"><a href="#0" data-type="color-4"></a></li> -->
+				</ul>
+				<!-- cd-filters -->
+			</div>
+			<!-- cd-tab-filter -->
+		</div>
+
+	
+		<!-- cd-tab-filter-wrapper -->
+		<!-- 1+1=<span id="AnswerBox">_</span>　 -->
+		<section class="cd-gallery">
+			<ul id="imgGroup">
+				<li v-for="(item, index) in image.items" class="ImgLi mix" v-bind:class="{'ImgLi': true, mix : true, 'color-1' : item.color_1 ,'color-2' : item.color_2 , 'color-3' : item.color_3}">
+					<div class="ImgFlex">
+						<div class="ImgPerson">
+							<div v-bind:style="{ 'background-image' : item.pimg }" class="ImgPerson_head">
+
+							</div>
+						</div>
+						<div class="ImgPerson_User">
+							<div class="ImgPerson_User_Name">
+								{{item.email}}
+							</div>
+							<div class="ImgPerson_User_Status">
+								{{item.status}}
+							</div>
+						</div>
+					</div>
+					<a class="modal-trigger" v-on:click="imgclick(item.pid,item.email)" href="#modal1">
+						<img v-bind:src="item.img" alt="Image 1">
+					</a>
+				</li>
+
+				<li class="gap"></li>
+				<li class="gap"></li>
+				<li class="gap"></li>
+			</ul>
+
+		</section>
+		<!-- cd-gallery -->
+
+		<!-- <div class="cd-filter">
+			<form>
+				<div class="cd-filter-block">
+					<h4>搜尋</h4>
+					
+					<div class="cd-filter-content">
+						<input type="search" placeholder="輸入關鍵字搜尋...">
+					</div>
+				</div> 
+
+				<div class="cd-filter-block">
+					<h4>Check boxes</h4>
+
+					<ul class="cd-filter-content cd-filters list">
+						<li>
+							<input class="filter" data-filter=".check1" type="checkbox" id="checkbox1">
+			    			<label class="checkbox-label" for="checkbox1">Option 1</label>
+						</li>
+
+						<li>
+							<input class="filter" data-filter=".check2" type="checkbox" id="checkbox2">
+							<label class="checkbox-label" for="checkbox2">Option 2</label>
+						</li>
+
+						<li>
+							<input class="filter" data-filter=".check3" type="checkbox" id="checkbox3">
+							<label class="checkbox-label" for="checkbox3">Option 3</label>
+						</li>
+					</ul>
+				</div>
+
+				<div class="cd-filter-block">
+					<h4>Select</h4>
+					
+					<div class="cd-filter-content">
+						<div class="cd-select cd-filters">
+							<select class="filter" name="selectThis" id="selectThis">
+								<option value="">Choose an option</option>
+								<option value=".option1">Option 1</option>
+								<option value=".option2">Option 2</option>
+								<option value=".option3">Option 3</option>
+								<option value=".option4">Option 4</option>
+							</select>
+						</div> 
+					</div> 
+				</div> 
+
+				<div class="cd-filter-block">
+					<h4>Radio buttons</h4>
+
+					<ul class="cd-filter-content cd-filters list">
+						<li>
+							<input class="filter" data-filter="" type="radio" name="radioButton" id="radio1" checked>
+							<label class="radio-label" for="radio1">All</label>
+						</li>
+
+						<li>
+							<input class="filter" data-filter=".radio2" type="radio" name="radioButton" id="radio2">
+							<label class="radio-label" for="radio2">Choice 2</label>
+						</li>
+
+						<li>
+							<input class="filter" data-filter=".radio3" type="radio" name="radioButton" id="radio3">
+							<label class="radio-label" for="radio3">Choice 3</label>
+						</li>
+					</ul>
+				</div> 
+			</form>
+
+			<a href="#0" class="cd-close">關閉</a>
+		</div>  -->
+		<!-- cd-filter -->
+		<!-- 
+		<a href="#0" class="cd-filter-trigger">篩選...</a> -->
+
+		<!-- <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a> -->
+
+
+
+	
+<script type="text/javascript">
+    (function () {
+        var options = {
+            facebook: "yixun.ceng1", // Facebook page ID
+            line: "//line.me/ti/p/UWSM_XjGJO", // Line QR code URL
+            company_logo_url: "//static.whatshelp.io/img/flag.png", // URL of company logo (png, jpg, gif)
+            greeting_message: "Hello, how may we help you? Just send us a message now to get assistance.", // Text of greeting message
+            call_to_action: "Message us", // Call to action
+            button_color: "#FF6550", // Color of button
+            position: "right", // Position may be 'right' or 'left'
+            order: "facebook,line" // Order of buttons
+        };
+        var proto = document.location.protocol, host = "whatshelp.io", url = proto + "//static." + host;
+        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+        s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+        var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+    })();
+</script>
+
+
+	</main>
+
+	
+<!-- /WhatsHelp.io widget -->
+
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/materialize.min.js"></script>
+	<script src="assets/jquery.viewbox.min.js"></script>
+	<script src="js/custom.js"></script>
+	<script src="js/jquery.mixitup.min.js"></script>
+	<script src="js/main.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vue"></script>
+
+	<script>
+		// function statusChangeCallback(response) {
+
+		// 	if (response.status === 'connected') {
+		// 		// Logged into your app and Facebook.
+		// 		testAPI();
+		// 	} else {
+		// 		// The person is not logged into your app or we are unable to tell.
+		// 		document.getElementById('status').innerHTML = 'Please log ' +
+		// 			'into this app.';
+		// 	}
+		// }
+
+		// function checkLoginState() {
+		// 	FB.getLoginStatus(function (response) {
+		// 		statusChangeCallback(response);
+		// 	});
+
+		// }
+
+		$('.Fbb').click(() => {
+			// FB.logout(function(response) {
+			// 	// Person is now logged out
+			// 	console.log(response);
+			//  });
+
+			//FB.login會彈出登入視窗
+			FB.login(function (response) {
+				if (response.status === 'connected') {
+					FB.api('/me', 'GET', {
+						"fields": "id,name,gender,email"
+					}, function (response) {
+						//FB登入視窗點擊登入後，會將資訊回傳到此處。
+						// FBlogin(response.email, response.name, response.gender);
+						console.log(response);
+						FbLogin(response);
+
+					});
+				}
+			}, {
+				scope: 'public_profile,email'
+			});
+		});
+
+		window.fbAsyncInit = function () {
+			FB.init({
+				appId: '',
+				xfbml: true,
+				version: 'v2.11'
+			});
+			FB.AppEvents.logPageView();
+
+
+		};
+
+		(function (d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) {
+				return;
+			}
+			js = d.createElement(s);
+			js.id = id;
+			js.src = "https://connect.facebook.net/zh_TW/sdk.js";
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+
+		// function testAPI() {
+		// 	console.log('Welcome!  Fetching your information.... ');
+		// 	FB.api('/me', function (response) {
+		// 		console.log(response);
+		// 		console.log('Successful login for: ' + response.name);
+		// 	});
+
+		// }
+		function FbLogin(res) {
+
+			$.post('http://13.230.19.21/Mtphp/api.php', {
+
+					Action: 'SignUp',
+					User: res.email,
+					Password: res.id,
+
+				}, (data) => {
+
+					$.post('http://13.230.19.21/Mtphp/api.php', {
+
+							Action: 'Login',
+							User: res.email,
+							Password: res.id,
+
+						}, (data) => {
+
+							var obj = $.parseJSON(data);
+							console.log(obj);
+							localStorage.setItem('Logining', 'true');
+							localStorage.setItem('email',res.email);
+							window.location.reload();
+						})
+						.fail((err) => {
+
+						});
+
+				})
+				.fail((err) => {});
+
+
+		}
+	</script>
+</body>
+
+</html>
